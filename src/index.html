@@ -8,35 +8,106 @@
   <title>HTML Portfolio</title>
 </head>
 <body>
-
   <!--
     Previous project placeholder begins
   -->
-  <div class="header">
-    <h1>Morgan McCircuit</h1>
-    <h2>I write code</h2>
-  </div>
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Irena Jurasek</a>
+    </div>
 
-  <div class="tagline">
-    <h3>Who I am</h3>
-    <p>Hi, my name is Morgan and I love to write code that is efficient.</p>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
   </div>
+  <!-- /.container-fluid -->
+</nav>
 
-
-  <div class="skills">
-    <h3>What I do</h3>
-    <p>Here are some of the languages I use on a day-to-day.</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
+<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>I am</h1>
+          <p>creative.</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>I do</h1>
+          <p>creative stuff.</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>I live</h1>
+          <p>to be creative.</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-  <div class="contact">
-    <h3>Get in touch</h3>
-    <p>I live in the cloud and can't be seen. Send messages to the good people at <a target="_blank" href="https://twitter.com/codeschool">Code School</a> and they'll notify me.</p>
+<div class="marketing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-eye-open"></span>
+        <h2>HTML</h2>
+        <p>It was a major discovery to finally see how a web site looks like "behind the curtain"...also the face I made after my first "Hello World!" was probably priceless!</p>
+      </div>
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-star"></span>
+        <h2>CSS</h2>
+        <p>Wow, just wow! How amazing is it to be able to turn a web site from plain text and images into a sleek display of wonders on the wide web. Don't know about you, but I feel like a star!</p>
+      </div>
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-heart"></span>
+        <h2>Bootstrap</h2>
+        <p>I just love how people are smart to invent a thing like Bootstrap, I appreciate you guys so much!</p>
+      </div>
+    </div>
   </div>
+</div>
+
+<footer>
+  <div class="container">
+    <h3>Contact me if you'd like</h3>
+    <p>I'm on Facebook, like duh!</p>
+  </div>
+</footer>
+
   <!--
     Previous project placeholder ends
     (unused pieces will be deleted at the last task)
